@@ -16,7 +16,7 @@
 logging:
     level:
         ROOT: INFO
-        com.agsft.hipster: INFO
+        com.agsft.jhipster: INFO
         io.github.jhipster: INFO
 
 eureka:
@@ -90,7 +90,7 @@ spring:
 #        ciphers: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 ,TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 ,TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 ,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_DHE_RSA_WITH_AES_128_CBC_SHA256,TLS_DHE_RSA_WITH_AES_128_CBC_SHA,TLS_DHE_RSA_WITH_AES_256_CBC_SHA256,TLS_DHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_GCM_SHA256,TLS_RSA_WITH_AES_256_GCM_SHA384,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA,TLS_RSA_WITH_CAMELLIA_256_CBC_SHA,TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA,TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
 # ===================================================================
 server:
-    port: 8081
+    port: 8080
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
@@ -115,7 +115,7 @@ jhipster:
                 # - In the JHipster Registry (which includes a Spring Cloud Config server)
                 # - In a separate `application-prod.yml` file, in the same folder as your executable WAR file
                 # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_SECRET` environment variable
-                base64-secret: Mzg2Mzc4YThkODQ5YWYyNTRhM2M5ZTY4OWE1YjQ3MjJkYWFhZTVlMjhiNjU1ZDgzMGFhZTIzZDQyY2FhODBmOGJmZTIxODM4OTEyMWY0NDU3MDIyZGM1ZDFhZTUyY2Q2ZDczNzU1ZWI5ZDQzMTBkMzczYmEzYjJlMWQ5OTQ2MTk=
+                base64-secret: MjQ0MzZmZjkyYTdjNzQyMGExZjg0NmQ0YzQ2OGU5ZTNmNjE1ZGQwYzlhNjc0MWU2MGIwZWRjMzMxMThhNzlmMjA5NWQyOWUxMjA0NWJmZGQ4YTUzNmZhNDRiMmQ3NGZiOTE4NWIyZTJkMzRhN2RmYzMyMjMwZTVkNWFmN2E3YzM=
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000

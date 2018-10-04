@@ -1,36 +1,45 @@
 {
   "generator-jhipster": {
-    "applicationType": "microservice",
-    "gitCompany": "",
+    "promptValues": {
+      "packageName": "com.agsft.jhipster"
+    },
+    "jhipsterVersion": "5.3.4",
+    "applicationType": "monolith",
     "baseName": "jhipsterdemo",
-    "packageName": "com.agsft.hipster",
-    "packageFolder": "com/agsft/hipster",
-    "serverPort": 8081,
-    "serviceDiscoveryType": "eureka",
+    "packageName": "com.agsft.jhipster",
+    "packageFolder": "com/agsft/jhipster",
+    "serverPort": "8080",
     "authenticationType": "jwt",
-    "uaaBaseName": "../uaa",
     "cacheProvider": "no",
-    "enableHibernateCache": false,
     "websocket": false,
     "databaseType": "sql",
-    "devDatabaseType": "h2Memory",
+    "devDatabaseType": "mysql",
     "prodDatabaseType": "mysql",
     "searchEngine": false,
-    "enableSwaggerCodegen": false,
     "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MjQ0MzZmZjkyYTdjNzQyMGExZjg0NmQ0YzQ2OGU5ZTNmNjE1ZGQwYzlhNjc0MWU2MGIwZWRjMzMxMThhNzlmMjA5NWQyOWUxMjA0NWJmZGQ4YTUzNmZhNDRiMmQ3NGZiOTE4NWIyZTJkMzRhN2RmYzMyMjMwZTVkNWFmN2E3YzM=",
+    "clientFramework": "angularX",
     "useSass": false,
     "clientPackageManager": "npm",
     "testFrameworks": [],
-    "enableTranslation": false,
-    "nativeLanguage": "en",
-    "languages": [
-      "en"
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-docker",
+        "version": "2.5.0"
+      },
+      {
+        "name": "generator-jhipster-audit-helper",
+        "version": "1.0.3"
+      },
+      {
+        "name": "generator-jhipster-swagger-cli",
+        "version": "3.0.1"
+      }
     ],
-    "clientFramework": "angularX",
-    "jhiPrefix": "jhi"
-  },
-  "git-provider": "GitHub",
-  "git-company": "balasaheb-agsft",
-  "repository-name": "jhipster"
+    "enableTranslation": false
+  }
 }

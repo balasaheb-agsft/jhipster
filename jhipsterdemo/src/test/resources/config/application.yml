@@ -87,11 +87,14 @@ jhipster:
             host: localhost
             port: 5000
             queue-size: 512
+    mail:
+        from: test@localhost
+        base-url: http://127.0.0.1:8080
     security:
         authentication:
             jwt:
                 # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-                base64-secret: Mzg2Mzc4YThkODQ5YWYyNTRhM2M5ZTY4OWE1YjQ3MjJkYWFhZTVlMjhiNjU1ZDgzMGFhZTIzZDQyY2FhODBmOGJmZTIxODM4OTEyMWY0NDU3MDIyZGM1ZDFhZTUyY2Q2ZDczNzU1ZWI5ZDQzMTBkMzczYmEzYjJlMWQ5OTQ2MTk=
+                base64-secret: MjQ0MzZmZjkyYTdjNzQyMGExZjg0NmQ0YzQ2OGU5ZTNmNjE1ZGQwYzlhNjc0MWU2MGIwZWRjMzMxMThhNzlmMjA5NWQyOWUxMjA0NWJmZGQ4YTUzNmZhNDRiMmQ3NGZiOTE4NWIyZTJkMzRhN2RmYzMyMjMwZTVkNWFmN2E3YzM=
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
